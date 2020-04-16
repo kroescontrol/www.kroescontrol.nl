@@ -39,7 +39,7 @@ hugo
 echo "Updating gh-pages branch"
 cd public 
 git add --all
-git commit -m "Publishing to gh-pages"
+git commit -m "Publishing to gh-pages" || true
 
 echo -n "Pushing to github gh-pages ... "
 git push -q origin gh-pages && echo "$(tput setaf 2)Everything up-to-date$(tput sgr0)" || echo echo "$(tput setaf 1) Failed!$(tput sgr0)"
